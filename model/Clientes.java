@@ -15,6 +15,16 @@ public class Clientes extends Pessoas {
         
     }
 
+    @Override
+    public void exibirDados(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Endereco: " + getEndereco());
+        System.out.println("Telefone: " + getTelefone());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Data de Nascimento: " + getDataNascimento());
+    }
+
     public String getEndereco(){
         return endereco;
     }

@@ -9,6 +9,8 @@ public abstract class Pessoas{
         this.cpf = cpf;
     }
 
+    public abstract void exibirDados();
+
     public String getNome() {
         return nome;
     }

@@ -1,4 +1,5 @@
 package model;
+
 public class Funcionario extends Pessoas{
     private String matricula;
     private String cargo;
@@ -9,6 +10,15 @@ public class Funcionario extends Pessoas{
         this.matricula = matricula;
         this.cargo = cargo;
         this.salario = salario;
+    }
+
+    @Override
+    public void exibirDados(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Matricula: " + getMatricula());
+        System.out.println("Cargo: " + getCargo());
+        System.out.println("Salario: " + getSalario());
     }
 
     public String getMatricula(){
