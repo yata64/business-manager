@@ -1,4 +1,5 @@
 package model;
+
 public class Produtos {
     private String nome;
     private double preco;
@@ -18,7 +19,7 @@ public class Produtos {
         this.nome = nome;
     }
 
-    public double preco(){
+    public double getPreco(){
         return preco;
     }
 
