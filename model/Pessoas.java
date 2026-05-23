@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Pessoas{
     private String nome;
     private String cpf;
