@@ -1,14 +1,8 @@
-# Anjos_Paes
-Um Sistema de Gerenciamento - Panificadora e Confeitaria 
+# Business_Manager
+Um sistema de gestão empresarial (ERP) inspirado em grandes soluções de mercado, desenvolvido para unificar processos de negócios de forma modular. O projeto foi construído utilizando os pilares da Programação Orientada a Objetos (POO) em Java, garantindo um código limpo, escalável e de fácil manutenção.
 
-Um projeto para desenvolvido para aplicar os conceitos básicos de Programação Orientada a Objetos.
-O sistema simula as operações básicas de uma padaria, gerenciamento de produtos, controle de estoque e operações de venda.
+## O
+* **Encapsulamento:** Proteção de dados sensíveis e controle de acesso aos atributos das classes através de *getters* e *setters*.
+* **Herança:** Estruturação de superclasses (ex: `Pessoas`) estendidas por subclasses mais específicas para reaproveitamento de código.
+* **Polimorfismo:** Implementação de interfaces e sobrescrita de métodos para comportamentos dinâmicos que variam conforme o tipo do objeto (ex: cálculo de bônus salarial dependendo do cargo).
 
-## Objetivo do Projeto 
-- Implementar o **Encapsulamento** para a proteção de dados sensíveis de produtos e transações.
-- Utilizar **Herança** para categorizar produtos específicos.
-- Aplicar **Polimorfismo** na exibição de detalhes dinâmicos de cada tipo de item.
-
-## Funcionalidades 
-- Cadastro de diferentes tipos de produtos.
-- Gerenciamento de estoque.
