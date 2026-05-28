@@ -1,6 +1,17 @@
 package model;
 
-public abstract class Pessoas{
+import java.io.Serializable;
+
+/**
+ * Classe ABSTRATA base do sistema.
+ * Todas as entidades do sistema são Pessoas.
+ *
+ * Demonstra: abstração, encapsulamento, herança.
+ */
+public abstract class Pessoas implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     private String nome;
     private String cpf;
 
@@ -9,22 +20,20 @@ public abstract class Pessoas{
         this.cpf = cpf;
     }
 
+    /**
+     * Método ABSTRATO → cada subclasse OBRIGATORIAMENTE sobrescreve.
+     * Demonstra: polimorfismo + sobrescrita (@Override).
+     */
     public abstract void exibirDados();
 
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    public String getCpf() { return cpf; }
+    public void setCpf(String cpf) { this.cpf = cpf; }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    @Override
+    public String toString() {
+        return nome + " (CPF: " + cpf + ")";
     }
 }
-
