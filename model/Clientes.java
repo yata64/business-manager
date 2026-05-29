@@ -2,10 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Cliente herda de Pessoas.
- * Sobrescreve exibirDados() → demonstra polimorfismo.
- */
+
 public class Clientes extends Pessoas implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -3,10 +3,7 @@ package model;
 import interfaces.Autenticavel;
 import java.io.Serializable;
 
-/**
- * Funcionario herda de Pessoas e implementa Autenticavel.
- * Demonstra: herança + interface + encapsulamento + polimorfismo.
- */
+
 public class Funcionario extends Pessoas implements Autenticavel, Serializable {
 
     private static final long serialVersionUID = 1L;
