@@ -1,6 +1,6 @@
 package model;
 
-import interfaces.Relatoravel;
+import interfaces.Relatorio;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Implementa Relatoravel → demonstra uso de interface.
  * BUG CORRIGIDO: produto.preco() → produto.getPreco()
  */
-public class Vendas implements Relatoravel, Serializable {
+public class Vendas implements Relatorio, Serializable {
 
     private static final long serialVersionUID = 1L;
 
