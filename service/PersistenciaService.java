@@ -1,4 +1,4 @@
-package Service;
+package service;
 
 public class PersistenciaService {
     private static final String DIR = "dados/";
@@ -31,3 +31,5 @@ public class PersistenciaService {
     }
 
 }
+
+/* Como faço para verificar os dados duplicados no arquivo?*/
