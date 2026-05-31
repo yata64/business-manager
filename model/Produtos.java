@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Produto do sistema.
  * Associado a Vendas (demonstra associação entre classes).
  */
+
 public class Produtos implements Serializable {
 
     private static final long serialVersionUID = 1L;
