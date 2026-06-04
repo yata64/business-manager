@@ -1,10 +1,12 @@
 package model;
 
-import interfaces.Autenticavel;
 import java.io.Serializable;
 
-
-public class Funcionario extends Pessoas implements Autenticavel, Serializable {
+/**
+ * Funcionario herda de Pessoas e implementa Autenticavel.
+ * Demonstra: herança + interface + encapsulamento + polimorfismo.
+ */
+public class Funcionario extends Pessoas implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -43,18 +45,6 @@ public class Funcionario extends Pessoas implements Autenticavel, Serializable {
         System.out.println("==================");
     }
 
-    // ─── Implementação da interface Autenticavel ──────────────────────────────
-
-    @Override
-    public boolean autenticar(String senha) {
-        return this.senha != null && this.senha.equals(senha);
-    }
-
-    @Override
-    public String getNivelAcesso() {
-        return nivelAcesso;
-    }
-
     // ─── Getters e Setters ────────────────────────────────────────────────────
 
     public String getMatricula()   { return matricula; }
@@ -66,7 +56,10 @@ public class Funcionario extends Pessoas implements Autenticavel, Serializable {
     public double getSalario()     { return salario; }
     public void setSalario(double salario) { this.salario = salario; }
 
+    public String getSenha() { return senha; }
     public void setSenha(String senha) { this.senha = senha; }
+
+    public String getNivelAcesso() { return nivelAcesso; }
     public void setNivelAcesso(String nivelAcesso) { this.nivelAcesso = nivelAcesso; }
 
     // ─── Persistência CSV ─────────────────────────────────────────────────────
