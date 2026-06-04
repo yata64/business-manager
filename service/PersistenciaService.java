@@ -31,5 +31,3 @@ public class PersistenciaService {
     }
 
 }
-
-/* Como faço para verificar os dados duplicados no arquivo?*/
