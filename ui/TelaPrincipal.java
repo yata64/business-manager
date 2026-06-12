@@ -133,6 +133,8 @@ public class TelaPrincipal extends JFrame {
         JButton btn = new JButton(texto);
         btn.setForeground(new Color(203, 213, 225));
         btn.setBackground(COR_SIDEBAR);
+        btn.setContentAreaFilled(false);
+        btn.setOpaque(true);
         btn.setBorderPainted(false);
         btn.setFocusPainted(false);
         btn.setFont(new Font("SansSerif", Font.PLAIN, 13));
@@ -173,6 +175,8 @@ public class TelaPrincipal extends JFrame {
     public static JButton botaoPrimario(String texto) {
         JButton btn = new JButton(texto);
         btn.setBackground(COR_PRIMARIA);
+        btn.setContentAreaFilled(false);
+        btn.setOpaque(true);
         btn.setForeground(Color.WHITE);
         btn.setFocusPainted(false);
         btn.setBorderPainted(false);
@@ -185,6 +189,8 @@ public class TelaPrincipal extends JFrame {
     public static JButton botaoPerigo(String texto) {
         JButton btn = new JButton(texto);
         btn.setBackground(COR_PERIGO);
+        btn.setContentAreaFilled(false);
+        btn.setOpaque(true);
         btn.setForeground(Color.WHITE);
         btn.setFocusPainted(false);
         btn.setBorderPainted(false);
@@ -197,6 +203,8 @@ public class TelaPrincipal extends JFrame {
     public static JButton botaoSucesso(String texto) {
         JButton btn = new JButton(texto);
         btn.setBackground(COR_SUCESSO);
+        btn.setContentAreaFilled(false);
+        btn.setOpaque(true);
         btn.setForeground(Color.WHITE);
         btn.setFocusPainted(false);
         btn.setBorderPainted(false);
