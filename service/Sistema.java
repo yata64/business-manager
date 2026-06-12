@@ -18,7 +18,8 @@ import java.util.List;
  */
 public class Sistema {
 
-    // ── Listas principais (ArrayList conforme rubrica) ────────────────────────
+    //Listas principais (ArrayList conforme rubrica)
+
     private List<Clientes>    clientes    = new ArrayList<>();
     private List<Funcionario> funcionarios = new ArrayList<>();
     private List<Produtos>    produtos    = new ArrayList<>();
@@ -26,13 +27,14 @@ public class Sistema {
 
     private Funcionario funcionarioLogado = null;
 
-    // ── Arquivos CSV ──────────────────────────────────────────────────────────
+    //Arquivos CSV 
+
     private static final String ARQ_CLIENTES     = "clientes.csv";
     private static final String ARQ_FUNCIONARIOS = "funcionarios.csv";
     private static final String ARQ_PRODUTOS     = "produtos.csv";
     private static final String ARQ_VENDAS       = "vendas.csv";
 
-    // ═════════════════════════════ AUTENTICAÇÃO ═══════════════════════════════
+    //AUTENTICAÇÃO 
 
     /**
      * Autentica um funcionário por matrícula e senha.
@@ -58,7 +60,7 @@ public class Sistema {
 
     public Funcionario getFuncionarioLogado() { return funcionarioLogado; }
 
-    // ═════════════════════════════ CLIENTES ═══════════════════════════════════
+    //CLIENTES 
 
     public void cadastrarCliente(Clientes cliente) {
         clientes.add(cliente);
@@ -75,7 +77,7 @@ public class Sistema {
 
     public List<Clientes> getClientes() { return clientes; }
 
-    // ═════════════════════════════ FUNCIONÁRIOS ═══════════════════════════════
+    //FUNCIONÁRIOS 
 
     public void cadastrarFuncionario(Funcionario funcionario) {
         funcionarios.add(funcionario);
@@ -92,7 +94,7 @@ public class Sistema {
 
     public List<Funcionario> getFuncionarios() { return funcionarios; }
 
-    // ═════════════════════════════ PRODUTOS ═══════════════════════════════════
+    //PRODUTOS
 
     public void cadastrarProduto(Produtos produto) {
         produtos.add(produto);
@@ -122,7 +124,7 @@ public class Sistema {
 
     public List<Produtos> getProdutos() { return produtos; }
 
-    // ═════════════════════════════ VENDAS ═════════════════════════════════════
+    //VENDAS
 
     /**
      * Registra uma venda já montada.
@@ -142,7 +144,7 @@ public class Sistema {
 
     public List<Vendas> getVendas() { return vendas; }
 
-    // ═════════════════════════════ RELATÓRIOS ═════════════════════════════════
+    //RELATÓRIOS
 
     public void gerarRelatorioVendas() {
         if (vendas.isEmpty()) {
@@ -179,7 +181,7 @@ public class Sistema {
         System.out.println("==========================================\n");
     }
 
-    // ═════════════════════════════ PERSISTÊNCIA ═══════════════════════════════
+    //PERSISTÊNCIA 
 
     /**
      * Carrega todos os dados dos CSVs ao iniciar o sistema.
