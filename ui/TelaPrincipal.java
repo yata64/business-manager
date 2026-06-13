@@ -96,7 +96,7 @@ public class TelaPrincipal extends JFrame {
         sidebar.add(userPanel);
 
         // Botão logout
-        JButton btnLogout = new JButton("⏻  Sair");
+        JButton btnLogout = new JButton("Sair");
         btnLogout.setForeground(new Color(248, 113, 113));
         btnLogout.setBackground(COR_SIDEBAR);
         btnLogout.setBorderPainted(false);
@@ -106,9 +106,15 @@ public class TelaPrincipal extends JFrame {
         btnLogout.setAlignmentX(Component.LEFT_ALIGNMENT);
         btnLogout.setBorder(new EmptyBorder(10, 20, 16, 20));
         btnLogout.addActionListener(e -> {
-            sistema.logout();
-            dispose();
-            SwingUtilities.invokeLater(() -> new TelaLogin(sistema).setVisible(true));
+            int confirm = JOptionPane.showConfirmDialog(
+            TelaPrincipal.this,
+            "Deseja encerrar o sistema?",
+            "Encerrar",
+            JOptionPane.YES_NO_OPTION
+            );
+            if (confirm == JOptionPane.YES_OPTION) {
+                System.exit(0); // encerra tudo
+            }
         });
         sidebar.add(btnLogout);
 
